@@ -17,10 +17,11 @@ Hãy bấm Star để ủng hộ BeeCost nhé :kissing_heart:
 
 mkdir -p /bee_university
 
-git clone https://github.com/tuantmtb/bee-university.git
+git clone https://github.com/beecost/bee-university.git
+cd bee-university
 git config credential.helper store
  
-cd bee-university
+
 virtualenv venv -p python3.7
 source venv/bin/activate
 pip install -r requirements.txt
@@ -37,6 +38,7 @@ python crawler/crawl_diemchuan.py
 # Output
 
 > /bee_university/crawler/common/university.gz
+
 
 Download: [university.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/university.gz) 
 
