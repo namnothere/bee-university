@@ -53,7 +53,7 @@ def get_info(sbd):
                         elif idx == 5:
                             subject = 'Su'
                         elif idx == 6:
-                            subject = 'Đia'
+                            subject = 'Dia'
                         elif idx == 7:
                             subject = 'GDCD'
                         elif idx == 8:
