@@ -49,6 +49,9 @@ Download: [university.gz](https://github.com/beecost/bee-university/blob/master/
 
 Download: [university_diemchuan.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/university_diemchuan.gz) 
 
+> /bee_university/crawler/common/diemthi_2019/provide_{code}_{part}.gz
+
+Download Sample (5000 điểm thi THPT 2019 thành phố Hà Nội) : [provide_01_0.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019/provide_01_0.gz)
 
 # Format data
 
