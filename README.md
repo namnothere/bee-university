@@ -8,11 +8,15 @@ Hãy bấm Star để ủng hộ BeeCost nhé :kissing_heart:
   
 
 # Development
+
 ```bash
+# OS Any (Ubuntu - Recommend)
 
 #install python 
+# detail: deploy/docs/install_python.md
 
 #install python 3.7
+# detail: deploy/docs/install_python37.md
 
 
 mkdir -p /bee_university
@@ -97,8 +101,11 @@ Folder: `/bee_university/crawler/common/diemthi_2019`
 # Stack
 
 Python
+
 Numpy
+
 Pandas
+
 Spark
 
 
