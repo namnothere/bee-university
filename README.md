@@ -28,11 +28,14 @@ pip install -r requirements.txt
 
 # Update folder path in init.py
 python init.py
+python init_server.py
 
 # Crawl danh sách url trường đại học
 python crawler/crawler_university_list.py
 # Crawl điểm chuẩn từ 2014 - 2018
 python crawler/crawl_diemchuan.py
+# Crawl điểm thi 2019 64 tỉnh thành
+python crawler/diemthi2019/crawler_diemthi2019.py
 ```
 
 # Output
