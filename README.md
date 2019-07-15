@@ -54,15 +54,17 @@ python crawler/diemthi2019/crawler_diemthi2019.py
 > /bee_university/crawler/common/university.gz
 
 
-Download: [university.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/university.gz) 
+1. Download: [university.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/university.gz) 
 
 > /bee_university/crawler/common/university_diemchuan.gz
 
-Download: [university_diemchuan.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/university_diemchuan.gz) 
+2. Download: [university_diemchuan.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/university_diemchuan.gz) 
 
 > /bee_university/crawler/common/diemthi_2019/provide_{code}_{part}.gz
 
-Format csv Full 800K điểm thi THPT Quốc gia 2019: [diemthi2019.csv.zip](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019_transform/diemthi2019.csv.zip)
+3. Full 800K điểm thi THPT Quốc gia 2019
+
+Format csv : [diemthi2019.csv.zip](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019_transform/diemthi2019.csv.zip)
 
 Format Parquet: [diemthi2019.parquet](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019_transform/diemthi2019.parquet)
 
