@@ -62,7 +62,12 @@ Download: [university_diemchuan.gz](https://github.com/beecost/bee-university/bl
 
 > /bee_university/crawler/common/diemthi_2019/provide_{code}_{part}.gz
 
-Download Sample (5000 điểm thi THPT 2019 thành phố Hà Nội) : [provide_01_0.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019/provide_01_0.gz)
+Full 800K điểm thi THPT Quốc gia 2019: [diemthi2019.csv.zip](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019_transform/diemthi2019.csv.zip)
+
+Download [BeeCost Extension](https://www.beecost.com/download/extension?pub=github_opensource) (ủng hộ BeeCost <3)
+
+Password uncompress: beecost.com
+
 
 # Format data
 
