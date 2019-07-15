@@ -116,7 +116,7 @@ if __name__ == '__main__':
     #     logger.info(f'{sbd} - {info_obj}')
 
     lst_provide = ['{0:02}'.format(num) for num in range(1, 65)]
-    for provide_id in reversed(lst_provide):
+    for provide_id in lst_provide:
         try:
             logger.info(f'prepare crawl provide: {provide_id}')
             # provide_id = 64
