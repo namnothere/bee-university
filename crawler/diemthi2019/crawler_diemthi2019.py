@@ -7,9 +7,9 @@ from bs4 import BeautifulSoup
 
 from config.config_university_project import ConfigUniversityProject
 from helper.array_helper import get_sublists
-from helper.multithread_helper import multithread_helper
 from helper.logger_helper import LoggerSimple
-from helper.reader_helper import load_jsonl_from_gz, store_jsons_perline_in_file
+from helper.multithread_helper import multithread_helper
+from helper.reader_helper import store_jsons_perline_in_file
 
 logger = LoggerSimple(name=__name__).logger
 
