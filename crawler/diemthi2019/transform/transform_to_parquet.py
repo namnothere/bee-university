@@ -33,10 +33,12 @@ if __name__ == '__main__':
 
     diemthi_2019_folder_path = '/bee_university/crawler/common/diemthi_2019'
     diemthi_2019_parquet_file_path = '/bee_university/crawler/common/diemthi_2019_transform/diemthi2019.parquet'
+    diemthi_2019_csv_file_path = '/bee_university/crawler/common/diemthi_2019_transform/diemthi2019.csv.gz'
     # df = load_data(diemthi_2019_folder_path=diemthi_2019_folder_path)
     # table = pa.Table.from_pandas(df)
     # pq.write_table(table, diemthi_2019_parquet_file_path)
     df = read_data(parquet_file=diemthi_2019_parquet_file_path)
+    df.to_csv(diemthi_2019_csv_file_path , compression='gzip')
     logger.info(df.describe(include='all'))
 
     # diemthi_2019_file_path = '/bee_university/crawler/common/diemthi_2019/provide_01_0.gz'
