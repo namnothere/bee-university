@@ -1,5 +1,7 @@
 #   Copyright (c) 2019 BeeCost Team <beecost.com@gmail.com>. All Rights Reserved
 #   BeeCost Project can not be copied and/or distributed without the express permission of @tuantmtb
+import os
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -114,7 +116,7 @@ if __name__ == '__main__':
     #     logger.info(f'{sbd} - {info_obj}')
 
     lst_provide = ['{0:02}'.format(num) for num in range(1, 65)]
-    for provide_id in lst_provide:
+    for provide_id in reversed(lst_provide):
         try:
             logger.info(f'prepare crawl provide: {provide_id}')
             # provide_id = 64
@@ -130,6 +132,9 @@ if __name__ == '__main__':
 
             for idx, sub_lst_sbd in enumerate(get_sublists(lst_sbd, int(len(lst_sbd) / 5000) + 1)):
                 file_diemthi_path = ConfigUniversityProject().file_diemthi_2019_path(provide_id=provide_id, part=idx)
+                if os.path.exists(file_diemthi_path):
+                    logger.info(f'skip: {file_diemthi_path}')
+                    continue
                 obj_sbd = multithread_helper(items=sub_lst_sbd, method=get_info, timeout_concurrent_by_second=36000,
                                              max_workers=50, debug=False)
                 store_jsons_perline_in_file(jsons_obj=obj_sbd, file_output_path=file_diemthi_path)
