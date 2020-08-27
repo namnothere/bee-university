@@ -15,8 +15,8 @@ class ConfigUniversityProject:
     def file_university_diemchuan_path(self):
         return self.folder_output_path + '/university_diemchuan.gz'
 
-    def file_diemthi_2019_path(self, provide_id, part):
-        return f'{self.folder_output_path}/diemthi_2019/provide_{provide_id}_{part}.gz'
+    def file_diemthi_2020_path(self, provide_id, part):
+        return f'{self.folder_output_path}/diemthi_2020/provide_{provide_id}_{part}.gz'
 
     @property
     def file_major_path(self):
