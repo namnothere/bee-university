@@ -14,7 +14,7 @@ def extract_data_diemchuan(url_diemchuan, university_meta, year=None):
     if year is None:
         diemchuan_datas = []
 
-        for year in [2018, 2017, 2016, 2015, 2014]:
+        for year in [2019, 2018, 2017, 2016, 2015, 2014]:
             try:
                 url_with_year = f'{url_diemchuan}?y={year}'
                 logger.info(f'prepare extract {url_with_year}')
