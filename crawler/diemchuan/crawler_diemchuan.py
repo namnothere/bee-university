@@ -1,3 +1,5 @@
+import json
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -22,7 +24,9 @@ def extract_data_diemchuan(url_diemchuan, university_meta, year=None):
                 if response.status_code == 200:
                     html = response.content
                     soup = BeautifulSoup(html, 'html.parser')
-                    for e_tr in soup.select('table > .bg_white'):
+                    e_table = soup.select_one('table')
+                    # for e_tr in soup.select('table > .bg_white'):
+                    for e_tr in e_table.select('.bg_white'):
                         e_tds = e_tr.select('td')
                         major_code = e_tds[1].get_text()
                         major_name = e_tds[2].get_text()
@@ -71,3 +75,9 @@ if __name__ == '__main__':
     file_university_diemchuan_path = ConfigUniversityProject().file_university_diemchuan_path
     store_jsons_perline_in_file(jsons_obj=universities_diemchuan_data, file_output_path=file_university_diemchuan_path)
     logger.info(f'stored file_university_diemchuan_path: {file_university_diemchuan_path}')
+
+# if __name__ == '__main__':
+#     data = method_univerisy_data(university_obj={
+#         'url': 'https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-thu-dau-mot-TDM.html'
+#     })
+#     logger.info(json.dumps(data))

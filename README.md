@@ -1,12 +1,12 @@
 # bee-university
-> Project Open Source provide by BeeCost.Com
+> Project Open Source provide by BeeCost
 
 
 Mục tiêu Project:
 
-+ Thu thập 1 triệu dữ liệu điểm thi THPT Quốc gia 2019
++ Thu thập gần 1 triệu dữ liệu điểm thi THPT Quốc gia năm 2019, 2020
  
-+ Thu thập điểm chuẩn đại học 2014 - 2018
++ Thu thập điểm chuẩn đại học 2014 - 2019
 
 + Phân tích dữ liệu
 
@@ -43,10 +43,10 @@ python init_server.py
 
 # Crawl danh sách url trường đại học
 python crawler/crawler_university_list.py
-# Crawl điểm chuẩn từ 2014 - 2018
+# Crawl điểm chuẩn từ 2014 - 2019
 python crawler/crawl_diemchuan.py
-# Crawl điểm thi 2019 64 tỉnh thành
-python crawler/diemthi2019/crawler_diemthi2019.py
+# Crawl điểm thi 2020 64 tỉnh thành
+python crawler/diemthi2020/crawler_diemthi2020.py
 ```
 
 # Output
@@ -60,36 +60,20 @@ python crawler/diemthi2019/crawler_diemthi2019.py
 
 2. Download: [university_diemchuan.gz](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/university_diemchuan.gz) 
 
-> /bee_university/crawler/common/diemthi_2019/provide_{code}_{part}.gz
+> /bee_university/crawler/common/diemthi_2020/provide_{code}_{part}.gz
 
-3. Full 800K điểm thi THPT Quốc gia 2019
+3. Full dữ liệu điểm thi THPT Quốc gia
+
+**Dữ liệu điểm thi THPT năm 2019**
 
 Format csv : [diemthi2019.csv.zip](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019_transform/diemthi2019.csv.zip)
 
-Format Parquet: [diemthi2019.parquet](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019_transform/diemthi2019.parquet)
+**Dữ liệu điểm thi THPT năm 2020**
+
+Format csv : [diemthi2020.csv.zip](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019_transform/diemthi2020.csv.zip)
+
 
 Download [BeeCost Extension](https://www.beecost.com/download/extension?pub=github_opensource) (ủng hộ BeeCost <3)
-
-Password uncompress: beecost.com
-
-
-# Format data
-
-Dữ liệu Format .GZ (jsonl - Mỗi dòng là 1 bản ghi)
-
-## University
- 
-File: `university.gz`
-
- ```javascript
-{"url": "https://diemthi.tuyensinh247.com/diem-chuan/hoc-vien-cong-nghe-buu-chinh-vien-thong-phia-bac-BVH.html", "university_code": "BVH", "university_name": "Học Viện Công Nghệ Bưu Chính Viễn Thông ( 
-Phía Bắc )"}
-{"url": "https://diemthi.tuyensinh247.com/diem-chuan/hoc-vien-cong-nghe-buu-chinh-vien-thong-phia-nam-BVS.html", "university_code": "BVS", "university_name": "Học Viện Công Nghệ Bưu Chính Viễn Thông (p
-hía Nam)"}
-{"url": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-cong-nghiep-det-may-ha-noi-CCM.html", "university_code": "CCM", "university_name": "Đại Học Công Nghiệp Dệt May Hà Nội"}
-{"url": "https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-kinh-te-nghe-an-CEA.html", "university_code": "CEA", "university_name": "Đại học Kinh Tế Nghệ An"}
-{"url": "https://diemthi.tuyensinh247.com/diem-chuan/hoc-vien-canh-sat-nhan-dan-CSH.html", "university_code": "CSH", "university_name": "Học Viện Cảnh Sát Nhân Dân"}
-```
 
 ## University điểm chuẩn 2014 - 2019
 File: `university_diemchuan.gz`
@@ -99,9 +83,9 @@ File: `university_diemchuan.gz`
 {"diemchuan_datas": [{"major_code": "7380101", "major_name": "Luật", "subject_group": "C00", "point": "24.5", "note": "", "year": 2018}, {"major_code": "7380101", "major_name": "Luật", "subject_group": "A00", "point": "18.5", "note": "", "year": 2018}, {"major_code": "7380101", "major_name": "Luật", "subject_group": "D01", "point": "18.5", "note": "", "year": 2018}, {"major_code": "7380101", "major_name": "Luật", "subject_group": "D03", "point": "18", "note": "", "year": 2018}, {"major_code": "7380101", "major_name": "Luật", "subject_group": "D78", "point": "19", "note": "", "year": 2018}, {"major_code": "7380101", "major_name": "Luật", "subject_group": "D82", "point": "19", "note": "", "year": 2018}, {"major_code": "7380101 CLC", "major_name": "Luật Chất lượng cao", "subject_group": "A01; D01; D07; D78", "point": "18.25", "note": "", "year": 2018}, {"major_code": "7380110", "major_name": "Luật kinh doanh", "subject_group": "A00; A01; D01; D03; D78; D82", "point": "20.75", "note": "", "year": 2018}, {"major_code": "7380109", "major_name": "Luật Thương mại Quốc tế", "subject_group": "A00; A01; D01; D03; D78; D82", "point": "---", "note": "", "year": 2018}, {"major_code": "", "major_name": "Các ngành đào tạo đại học", "subject_group": "", "point": "---", "note": "", "year": 2017}, {"major_code": "7380101", "major_name": "Luật", "subject_group": "A00; C00; D01; D03; D78; D82", "point": "27.25", "note": "", "year": 2017}, {"major_code": "7380101CLC", "major_name": "Luật chất lượng cao đáp ứng Thông tư 23", "subject_group": "A01; D01; D07; D07; D78", "point": "---", "note": "", "year": 2017}, {"major_code": "7380110", "major_name": "Luật kinh doanh", "subject_group": "A00; A01; D01; D03; D78; D82", "point": "24", "note": "", "year": 2017}, {"major_code": "7380109", "major_name": "Luật kinh doanh*", "subject_group": "A00; D01; D02; D03", "point": "---", "note": "", "year": 2016}, {"major_code": "7380101", "major_name": "Luật", "subject_group": "C00; D01; D02; D03", "point": "---", "note": "", "year": 2016}, {"major_code": "7380101", "major_name": "Luật học", "subject_group": "", "point": "100.5", "note": "", "year": 2015}, {"major_code": "7380109", "major_name": "Luật kinh doanh", "subject_group": "", "point": "103", "note": "", "year": 2015}, {"major_code": "7380101", "major_name": "Luật học", "subject_group": "A", "point": "20", "note": "", "year": 2014}, {"major_code": "7380101", "major_name": "Luật học", "subject_group": "A1", "point": "20", "note": "", "year": 2014}, {"major_code": "7380101", "major_name": "Luật học", "subject_group": "C", "point": "20", "note": "", "year": 2014}, {"major_code": "7380101", "major_name": "Luật học", "subject_group": "D1", "point": "20", "note": "", "year": 2014}, {"major_code": "7380101", "major_name": "Luật học", "subject_group": "D3", "point": "20.5", "note": "", "year": 2014}, {"major_code": "7380109", "major_name": "Luật kinh doanh", "subject_group": "A", "point": "22", "note": "", "year": 2014}, {"major_code": "7380109", "major_name": "Luật kinh doanh", "subject_group": "A1", "point": "22", "note": "", "year": 2014}, {"major_code": "7380109", "major_name": "Luật kinh doanh", "subject_group": "D1", "point": "21.5", "note": "", "year": 2014}, {"major_code": "7380109", "major_name": "Luật kinh doanh", "subject_group": "D3", "point": "21.5", "note": "", "year": 2014}], "university_meta": {"url": "https://diemthi.tuyensinh247.com/diem-chuan/khoa-luat-dai-hoc-quoc-gia-ha-noi-QHL.html", "university_code": "QHL", "university_name": "Khoa Luật – Đại Học Quốc Gia Hà Nội"}}
 ```
 
-## Điểm thi THPT Quốc gia 2019
+## Điểm thi THPT Quốc gia 2020
 
-Folder: `/bee_university/crawler/common/diemthi_2019`
+Folder: `/bee_university/crawler/common/diemthi_2020`
 
 ```javascript
 
@@ -125,14 +109,13 @@ Pandas
 Spark
 
 
-
 # Author
 
 Tran Minh Tuan - [tuantmtb](https://facebook.com/tuantmtb) - tuan@beecost.com
 
 # BeeCost - Tiện ích mua sắm Online
 
-BeeCost là Trợ lý mua sắm online. Giúp bạn mua hàng tiết kiệm hơn trên Shopee, Tiki, Sendo, Lazada, Adayroi. Ứng dụng được tạo từ việc phân tích hơn 50 triệu sản phẩm thương mại điện tử mỗi ngày. 
+[BeeCost.VN](https://beecost.vn), [BeeCost.Com](https://www.beecost.com) là Trợ lý mua sắm online. Giúp bạn mua hàng tiết kiệm hơn trên Shopee, Tiki, Sendo, Lazada, Adayroi. Ứng dụng được tạo từ việc phân tích hơn 50 triệu sản phẩm thương mại điện tử mỗi ngày. 
 
 Tính năng chính của tiện ích BeeCost:
 
@@ -141,8 +124,6 @@ Tính năng chính của tiện ích BeeCost:
 - Price Alert (Thông báo khi giảm giá)
 - Tìm kiếm mã giảm giá tự động
 
-> Tìm hiểu BeeCost tại [Trang chủ](https://www.beecost.com)
+> Tìm hiểu BeeCost tại [beecost.com](https://www.beecost.com) và [beecost.vn](https://beecost.vn)
 
 > Download [BeeCost Extension](https://www.beecost.com/download/extension?pub=github_opensource) trên Google Chrome
-
-> Download [BeeCost Android](https://play.google.com/store/apps/details?id=com.beecost.assistance.shopee&hl=vi) trên Mobile
