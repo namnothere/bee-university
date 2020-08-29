@@ -70,7 +70,7 @@ Format csv : [diemthi2019.csv.zip](https://github.com/beecost/bee-university/blo
 
 **Dữ liệu điểm thi THPT năm 2020**
 
-Format csv : [diemthi2020.csv.zip](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2019_transform/diemthi2020.csv.zip)
+Format csv : [diemthi2020.csv.zip](https://github.com/beecost/bee-university/blob/master/output_data/crawler/common/diemthi_2020_transform/diemthi2020.csv.zip)
 
 
 Download [BeeCost Extension](https://www.beecost.com/download/extension?pub=github_opensource) (ủng hộ BeeCost <3)
