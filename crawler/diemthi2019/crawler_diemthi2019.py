@@ -13,6 +13,7 @@ from helper.reader_helper import store_jsons_perline_in_file
 
 logger = LoggerSimple(name=__name__).logger
 
+dict = {0: "Toan",1:"Van",2:"Li",3:"Hoa",4:"Sinh",5:"Su",6:"Dia",7:"GDCD",8:"Ngoai_ngu",9:"Ma mon ngoai ngu"}
 
 def get_url_check_sbd(sbd):
     return f'https://diemthi.tuoitre.vn/kythi2019.html?FiledValue={sbd}&MaTruong={sbd[:2]}'
@@ -41,28 +42,7 @@ def get_info(sbd):
                         else:
                             point = float(td.get_text().strip())
                         # logger.info(point)
-
-                        if idx == 0:
-                            subject = 'Toan'
-                        elif idx == 1:
-                            subject = 'Van'
-                        elif idx == 2:
-                            subject = 'Li'
-                        elif idx == 3:
-                            subject = 'Hoa'
-                        elif idx == 4:
-                            subject = 'Sinh'
-                        elif idx == 5:
-                            subject = 'Su'
-                        elif idx == 6:
-                            subject = 'Dia'
-                        elif idx == 7:
-                            subject = 'GDCD'
-                        elif idx == 8:
-                            subject = 'Ngoai_ngu'
-                        elif idx == 9:
-                            subject = 'Ma_mon_ngoai_ngu'
-
+                        subject = dict[idx]
                         info_obj.update({
                             subject: point
                         })
